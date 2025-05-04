@@ -31,13 +31,22 @@ header{
   background-color: bisque;
   justify-content: end;
   padding: 20px;
-  gap: 805px;
+  gap: 780px;
 }
 
 #header-into-main{
   height:15px;
   background: linear-gradient(bisque, white);
 }
+
+#logout{
+  height:30px;
+  width:70px;
+}
+
+
+
+/*  Upper Main  */
 
 #add-btn-animate{
   display: flex;
