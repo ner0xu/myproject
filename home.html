@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <title>Sign-in</title>
+    </head>
+    <body>
+        <header>
+            <h1>HOME</h1>
+            <button type="submit" id="logout" name="logout">Logout</button>
+        </header> 
+
+    <div id="add-btn-animate">
+    <button id="btn-add-user">Add</button>
+    <img id="add-arrow" src="https://cdn-icons-png.flaticon.com/512/2223/2223615.png" alt="image">
+    </div>
+
+    <div class="action">
+        <input type="text" id="search-users" placeholder="Search by name...">
+        <label for="select-position">
+            Position
+            <select name="position" id="select-position">
+                <option value="Manager">Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Tester">Tester</option>
+                <option value="Designer">Designer</option>
+            </select>
+        </label>
+        <label for="select-sorting">
+            Sorting
+            <select name="position" id="select-sorting">
+                <option value="Manager">Low to High Cost</option>
+                <option value="Developer">High to Low Cost</option>
+            </select>
+        </label>
+        <label for="input-cost">
+            Cost
+            <div>
+                <input type="number" id="input-cost" name="cost" placeholder="От"/>
+                <input type="number" id="input-cost" name="cost" placeholder="До"/>
+            </div>
+        </label>
+    </div>
+
+
+    <div class="modal-wrapper">
+        <form id="form-adding-products">
+            <header>
+                <h2>Add a person</h2>
+                <button type="button" id="btn-close-add-user-modal">Close</button>
+            </header>
+            <label for="input-name">
+                Name:
+                <input type="text" id="input-name" name="name"/>
+            </label>
+            <label for="select-position">
+                Position:
+                <select name="position" id="select-position">
+                    <option value="Manager">Manager</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Tester">Tester</option>
+                    <option value="Designer">Designer</option>
+                </select>
+            </label>
+            <label for="input-description">
+                Description:
+                <textarea
+                id="textarea-description"
+                name="description"
+                rows="4">
+                </textarea>
+            </label> 
+            <label for="input-avatar">
+                Avatar (link here):
+                <input type="text" id="input-description" name="avatar"/>
+            </label> 
+            <label for="select-role">
+                Role:
+                <select type="role" id="select-role" name="role">
+                    <option value="">Moderator</option>
+                    <option value="">Admin</option>
+                    <option value="">User</option>
+                </select>
+            </label>
+            <label for="input-price">
+                Price:
+                <input type="number" id="input-price" name="price"/>
+            </label>
+            <label for="checkbox-featured">
+                Mark as featured:
+                <input type="checkbox" id="checkbox-featured" name="featured"/>
+            </label>
+            <div>
+                <label for="input-gender">
+                    Gender:
+                    <input type="radio" id="radio-female" name="gender" value="female"/>Female
+                    <input type="radio" id="radio-male" name="gender" value="male" checked/>Male
+                </label>
+            </div>
+            <button id="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    
+    
+    <section id="status-columns">
+
+        <!-- <h2>A list of users</h2> -->
+        <div id="loader" class="loader" style="display: none">
+            <div class="spinner"></div>
+        </div>
+
+        <article class="status-container">
+            <h2>Initial:</h2>
+            <div 
+            id="initial-users"
+            class="status-container-cards"></div>
+        </article>
+        <article class="status-container">
+            <h2>Awaiting:</h2>
+            <div
+            id="awaiting-users"
+            class="status-container-cards"></div>
+        </article>
+        <article class="status-container">
+            <h2>Approved:</h2>
+            <div 
+            id="approved-users"
+            class="status-container-cards"></div>
+        </article>
+        <article class="status-container">
+            <h2>Deleted:</h2>
+            <div 
+            id="deleted-users"
+            class="status-container-cards"></div>
+        </article>
+
+    </section>
+
+
+    <section class="section-advantages">
+        <h2>Why choose us?</h2>
+    </section>    
+    </body>
+    <script type="module" src="homesrc.mjs"></script>
+</html>

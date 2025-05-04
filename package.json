@@ -1,0 +1,22 @@
+{
+  "name": "ewrewr",
+  "version": "11.3.0",
+  "description": "wadaw",
+  "keywords": [
+    "awdaw"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "awdaw"
+  },
+  "license": "UNLICENSED",
+  "author": "awdaw",
+  "type": "commonjs",
+  "main": "awdawd",
+  "scripts": {
+    "dev": "node ./homesrc.mjs"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
